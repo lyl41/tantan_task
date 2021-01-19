@@ -42,6 +42,7 @@ Indexes:
 ```
 
 ## Run
+go mod download
 go run main.go
 
 ## API
