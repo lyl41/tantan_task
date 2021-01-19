@@ -48,6 +48,7 @@ go run main.go
 
 ```
 Users: 
+
 GET
  /users 
 List all users 
@@ -65,6 +66,8 @@ $curl -XGET "http://localhost:80/users"
     "type": "user" 
   } 
 ] 
+
+
 POST
  /users 
 Create a user 
@@ -77,6 +80,8 @@ $curl -XPOST -d '{"name":"Alice"}' "http://localhost:80/users"
   "name": "Alice" ,
   "type": "user" 
 }
+
+
 Relationships: 
 GET
  /users/:user_id/relationships 
@@ -100,6 +105,8 @@ $curl -XGET "http://localhost:80/users/11231244213/relationships"
     "type": "relationship" 
   }
 ] 
+
+
 PUT
  /users/:user_id/relationships/:other_user_id 
 Create/update relationship state to another user. 
