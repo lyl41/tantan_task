@@ -42,6 +42,7 @@ func UpdateRelation(uid1, uid2 int64, relation string) (res *table.Relation, err
 	tx, err := GetDb().Begin()
 	if err != nil {
 		err = errors.Wrap(err, "")
+		return
 	}
 	ok := false
 	defer func() {
